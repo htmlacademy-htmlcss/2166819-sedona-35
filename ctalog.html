@@ -68,7 +68,7 @@
 
       <section class="search">
         <h2 class="visually-hidden">Параметры поиска гостиниц в Седоне</h2>
-        <form class="search-filter" action="#" method="get">
+        <form class="search-filter" action="https://echo.htmlacademy.ru/" method="get">
 
           <fieldset class="search-filter-group">
             <legend class="search-filter-title">Инфраструктура:</legend>
@@ -93,6 +93,23 @@
 
           <fieldset class="search-filter-group">
             <legend class="search-filter-title">Тип жилья:</legend>
+            <ul class="search-filter-list">
+              <li class="search-filter-item">
+                <label class="control"><input class="control-input" type="radio" checked name="type-of-housing" value="hotel">
+                  Гостиница
+                </label>
+              </li>
+              <li class="search-filter-item">
+                <label class="control"><input class="control-input" type="radio" name="type-of-housing" value="motel">
+                  Мотель
+                </label>
+              </li>
+              <li class="search-filter-item">
+                <label class="control"><input class="control-input" type="radio" name="type-of-housing" value="apartments">
+                  Апартаменты
+                </label>
+              </li>
+            </ul>
           </fieldset>
 
           <button class="button" type="submit">Применить</button>
