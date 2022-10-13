@@ -8,44 +8,41 @@
   </head>
 
   <body>
-    <header>
+    <header class="page-header">
       <nav class="navigation">
-        <ul class="navigation-list">
+        <ul class="navigation-list list">
           <li class="navigation-item">
-            <a class="navigation-link" href="index.html">
-              <span class="visually-hidden">
-                Логотип
-              </span>
+            <a class="link navigation-link" href="#">
               <img class="navigation-logo" src="images/logo-sedona-city.svg" alt="Логотип города." width="140" height="71">
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Главная</a>
+            <a class="link navigation-link" href="#">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">О седоне</a>
+            <a class="link navigation-link" href="#">О седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link current" href="catalog.html">Гостиницы</a>
+            <a class="link navigation-link current" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-list navigation-user">
+        <ul class="navigation-list navigation-user list">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="link navigation-link" href="#">
               <span class="visually-hidden">
                 Поиск
               </span>
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
+          <li class="navigation-item-button">
+            <a class="link navigation-link" href="#">
               <span class="visually-hidden">
                 Избранное
               </span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="button button-navigation" href="#">Хочу сюда!</a>
+            <a class="link button button-navigation" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -54,26 +51,26 @@
     <main class="main-inner">
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
-        <ul class="breadcrumbs-list">
+        <ul class="breadcrumbs-list list">
           <li class="breadcrumbs-items">
-            <a class="breadcrumbs-link" href="index.html">
+            <a class="link breadcrumbs-link" href="index.html">
               <span class="visually-hidden">Главная</span>
             </a>
           </li>
           <li class="breadcrumbs-items">
-            <a class="breadcrumbs-link">
+            <a class="link breadcrumbs-link">
               Гостиницы
             </a>
           </li>
         </ul>
 
-        <section class="search">
+        <section class="search-hotel">
           <h2 class="visually-hidden">Параметры поиска гостиниц в Седоне</h2>
           <form class="search-filter" action="https://echo.htmlacademy.ru/" method="get">
 
             <fieldset class="search-filter-group">
               <legend class="search-filter-title">Инфраструктура:</legend>
-              <ul class="search-filter-list">
+              <ul class="search-filter-list list">
                 <li class="search-filter-item">
                   <label class="control">
                     <input class="control-input" type="checkbox" checked name="swimming-pool">
@@ -97,7 +94,7 @@
 
             <fieldset class="search-filter-group">
               <legend class="search-filter-title">Тип жилья:</legend>
-              <ul class="search-filter-list">
+              <ul class="search-filter-list list">
                 <li class="search-filter-item">
                   <label class="control">
                     <input class="control-input" type="radio" checked name="type-of-housing" value="hotel">
@@ -126,6 +123,8 @@
           </form>
         </section>
       </header>
+
+      <section class="result">
         <p class="search-result">Найдено гостиниц: 38</p>
 
         <!-- Добавляется выпадающий список (ниже)-->
@@ -136,30 +135,30 @@
         </select>
 
         <!-- Добавляются варианты отображения каталога на странице (ниже)-->
-        <a class="button button-tile" href="#">
+        <a class="link button-tile" href="#">
           <span class="visually-hidden">Показать в виде плиток</span>
         </a>
-        <a class="button button-table" href="#">
+        <a class="link button-table" href="#">
           <span class="visually-hidden">Показать в виде таблицы</span>
         </a>
-        <a class="button button-table-item" href="#">
+        <a class="link button-table-item" href="#">
           <span class="visually-hidden">Показать в виде списка</span>
         </a>
       </section>
 
       <!-- Карточки отелей (ниже)-->
-      <ul class="housing-card-list">
+      <ul class="housing-card-list list">
         <li class="housing-card-item">
-          <a class="housing-card-link" href="housing.html">
+          <a class="link housing-card-link" href="housing.html">
             <img class="housing-card-image" src="images/catalog/hotel-amara-resort-spa.jpg" alt="Гостиница Amara Resort & Spa." width="300" height="212">
             <h3 class="housing-card-title">Amara Resort & Spa</h3>
           </a>
           <p class="housing-card-description">Гостиница</p>
           <p class="housing-card-price">От 4000 ₽</p>
-          <a class="button housing-card-button" href="housing.html">
+          <a class="link button-card housing-card-button" href="housing.html">
             Подробнее
           </a>
-          <a class="button add-to-favorites" href="#">
+          <a class="link button-card add-to-favorites" href="#">
             в избранное
           </a>
           <p class="housing-stars housing-stars-4">
@@ -169,16 +168,16 @@
         </li>
 
         <li class="housing-card-item">
-          <a class="housing-card-link" href="housing.html">
+          <a class="link housing-card-link" href="housing.html">
             <img class="housing-card-image" src="images/catalog/hotel-villas-at-poco-diablo.jpg" alt="Гостиница Villas at Poco Diablo." width="300" height="212">
             <h3 class="housing-card-title">Villas at Poco Diablo</h3>
           </a>
           <p class="housing-card-description">Гостиница</p>
           <p class="housing-card-price">От 5000 ₽</p>
-          <a class="button housing-card-button" href="housing.html">
+          <a class="link button-card housing-card-button" href="housing.html">
             Подробнее
           </a>
-          <a class="button add-to-favorites" href="#">
+          <a class="link button-card add-to-favorites green" href="#">
             в избранном
           </a>
           <p class="housing-stars housing-stars-4">
@@ -188,16 +187,16 @@
         </li>
 
         <li class="housing-card-item">
-          <a class="housing-card-link" href="housing.html">
+          <a class="link housing-card-link" href="housing.html">
             <img class="housing-card-image" src="images/catalog/hotel-desert-quail-inn.jpg" alt="Гостиница Desert Quail Inn." width="300" height="212">
             <h3 class="housing-card-title">Desert Quail Inn</h3>
           </a>
           <p class="housing-card-description">Гостиница</p>
           <p class="housing-card-price">От 2500 ₽</p>
-          <a class="button housing-card-button" href="housing.html">
+          <a class="link button-card housing-card-button" href="housing.html">
             Подробнее
           </a>
-          <a class="button add-to-favorites" href="#">
+          <a class="link button-card add-to-favorites" href="#">
             в избранное
           </a>
           <p class="housing-stars housing-stars-3">
@@ -207,16 +206,16 @@
         </li>
 
         <li class="housing-card-item">
-          <a class="housing-card-link" href="housing.html">
+          <a class="link housing-card-link" href="housing.html">
             <img class="housing-card-image" src="images/catalog/hotel-greentree-inn.jpg" alt="Гостиница GreenTree Inn." width="300" height="212">
             <h3 class="housing-card-title">GreenTree Inn</h3>
           </a>
           <p class="housing-card-description">Гостиница</p>
           <p class="housing-card-price">От 1500 ₽</p>
-          <a class="button housing-card-button" href="housing.html">
+          <a class="link button-card housing-card-button" href="housing.html">
             Подробнее
           </a>
-          <a class="button add-to-favorites" href="#">
+          <a class="link button-card add-to-favorites" href="#">
             в избранное
           </a>
           <p class="housing-stars housing-stars-2">
@@ -227,33 +226,31 @@
       </ul>
 
       <!-- Пагинация -->
-      <ul class="pagination">
-        <li class="pagination-item">
-          <a class="pagination-link pagination-current">1</a>
+      <ul class="pagination-list list">
+        <li class="pagination-item pagination-current">
+          <a class="link pagination-link">1</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">2</a>
+          <a class="link pagination-link" href="#">2</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">3</a>
+          <a class="link pagination-link" href="#">3</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">4</a>
+          <a class="link pagination-link" href="#">4</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">5</a>
+          <a class="link pagination-link" href="#">5</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">
-            <!-- Необходимо сделать точечки -->
-          </a>
+          <a class="link pagination-link" href="#">...</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">10</a>
+          <a class="link pagination-link" href="#">10</a>
         </li>
       </ul>
 
-      <section class="newsletter">
+      <section class="newsletter newsletter-catalog">
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -268,19 +265,19 @@
     <footer class="pade-footer">
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="footer-social-list">
+        <ul class="footer-social-list list">
           <li class="footer-social-item">
-            <a class="button" href="https://vk.com/htmlacademy">
+            <a class="link button-vk" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="https://t.me/htmlacademy ">
+            <a class="link button-telegram" href="https://t.me/htmlacademy ">
               <span class="visually-hidden">Телеглам</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+            <a class="link button-youtube" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Ютуб</span>
             </a>
           </li>
@@ -289,14 +286,15 @@
 
       <section class="footer-contact">
         <h2 class="visually-hidden">Контакт для связи</h2>
-        <a class="footer-contact-phone" href="tel:+78128121212">
+        <a class="link footer-contact-phone" href="tel:+78128121212">
           +7 (812) 812-12-12
         </a>
       </section>
 
       <section class="footer-logo">
-        <h2 class="visually-hidden">Логотип .htmlacademy</h2>
-        <a class="footer-logo-link" href="https://htmlacademy.ru/profile/id2166819"></a>
+        <a class="link footer-logo-link" href="https://htmlacademy.ru/profile/id2166819">
+          <img class="footer-logo-img" src="images/logo-html-academy.svg" alt="Html Academy." width="115" height="33">
+        </a>
       </section>
     </footer>
   </body>

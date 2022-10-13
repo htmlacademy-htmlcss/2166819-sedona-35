@@ -24,28 +24,25 @@ body {
 }
 
 /*Стилизация хедера*/
-
 .page-header {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
 }
 
-.navigation-list, .advantages-list, .travel-list, .footer-social-list, .search-filter-list, .housing-card-list, .breadcrumbs-list {
+.list {
   list-style-type: none;
 }
 
-.navigation-link {
+.link {
   color: inherit;
-  text-transform: capitalize;
   text-decoration: none;
-  text-align: center;
 }
 
 .button {
   color: #FFFFFF;
-  background: #756157;
+  background-color: #756157;
   border-radius: 4px;
   text-transform: uppercase;
   text-decoration: none;
@@ -59,7 +56,6 @@ body {
 }
 
 /*Стилизация приветствия на главной странице*/
-
 .welcome {
   background-image: url("../images/index-mountains-background.jpg");
   background-repeat: no-repeat;
@@ -68,33 +64,36 @@ body {
 }
 
 /*Всавить ёлочку*/
-
-.preview, .search {
-  background: #FFFFFF;
+.preview,
+.search {
+  background-color: #FFFFFF;
   text-align: center;
 }
 
-.preview-title, .search-title, .newsletter-title {
+.preview-title,
+.search-title,
+.newsletter-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
 
-.preview-description, .search-description {
+.preview-description,
+.search-description {
   font-size: 22px;
   line-height: 26px;
   color: #333333
 }
 
 /*Стилизация преимуществ на главной странице*/
-
-.advantages{
+.advantages {
   text-align: center;
   color: #000000;
 }
 
-.advantages-title, .travel-title{
+.advantages-title,
+.travel-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -102,28 +101,29 @@ body {
 }
 
 .advantages-item-blue {
-  background: #82B3D3;
+  background-color: #82B3D3;
   color: #FFFFFF;
 }
 
 .advantages-item-white {
-  background: rgba(131, 179, 211, 0.12);
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .advantages-item-grey {
-  background: rgba(131, 179, 211, 0.2);
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
-.advantages-description, .travel-description {
+.advantages-description,
+.travel-description {
   color: #333333;
 }
 
 .travel-item {
-  background: rgba(131, 179, 211, 0.12);
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .travel-item-white {
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -143,7 +143,8 @@ body {
 }
 
 /*Стилизация раздела поиска жилья*/
-.button-search {
+.button-search,
+.pagination-link {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -154,7 +155,7 @@ body {
   background-image: url("../images/background-subscribe.jpg");
   background-repeat: no-repeat;
   width: 1200px;
-  height: 415px;
+  min-height: 415px;
   text-align: center;
   color: #FFFFFF;
   display: flex;
@@ -169,6 +170,11 @@ body {
   color: #FFFFFF;
 }
 
+.newsletter-catalog {
+  background: #FFFFFF;
+  color: #000000;
+}
+
 .field {
   display: flex;
   flex-direction: row;
@@ -180,14 +186,14 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background: #82B3D3;
+  background-color: #82B3D3;
   border-radius: 0 4px 4px 0;
   color: #FFFFFF;
 }
 
 /*Стилизация футера*/
 .pade-footer {
-  background: #FFFFFF;
+  background-color: #FFFFFF;
 }
 
 .footer-contact-phone {
@@ -199,36 +205,29 @@ body {
   color: #000000;
 }
 
-
-
 /*Страница каталога*/
-
 .inner-header {
-  background: #82B3D3;
   background-image: url("../images/catalog-background.jpg");
   background-repeat: no-repeat;
-  width: ;
-  height: ;
+  width: 1200px;
+  min-height: 412px;
+  background-color: #82B3D3;
+  color: #FFFFFF;
 }
 
 .inner-header-title {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
-  color: #FFFFFF;
 }
 
 /*Хлебные крошки или как вернуться домой*/
 .breadcrumbs-link {
   font-size: 16px;
-  color: #FFFFFF;
 }
 
-
 /*Параметры поиска гостиниц в седоне*/
-.search-filter-group{
-  background: #82B3D3;
-  color: #FFFFFF;
+.search-filter-group {
   font-size: 18px;
   line-height: 23px;
 }
@@ -240,7 +239,8 @@ body {
   text-transform: capitalize;
 }
 
-.button-search {
+.button-search,
+.button-card {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -249,13 +249,15 @@ body {
   width: 191px;
   height: 36px;
   border-radius: 4px;
+  border: 0;
 }
 
-.button-submit {
-  background: #82B3D3;
+.button-submit,
+.add-to-favorites {
+  background-color: #82B3D3;
 }
 
-.search-result{
+.search-result {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -270,21 +272,51 @@ body {
 }
 
 /*Карточки отелей*/
+.housing-card-list,
+.result,
+.pagination-list {
+  background-color: #FFFFFF;
+}
 
-.housing-card-link{
+.housing-card-link {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  text-decoration: none;
-  color: #000000;
 }
 
-.housing-card-description, .housing-card-price {
+.housing-card-description,
+.housing-card-price {
   color: #333333;
 }
 
+.button-card {
+  text-transform: capitalize;
+}
+
 .housing-card-button {
-  font-weight: 700;
+  background-color: #756157;
+}
+
+.green {
+  background: #7DB54F;
+}
+
+.housing-card-rating {
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+/*Пагинация*/
+.pagination-item {
+  background-color: #82B3D3;
+  border-radius: 4px;
+  color: #FFFFFF;
+}
+
+.pagination-current {
+  background-color: #F2F2F2;
+  color: #000000;
 }
