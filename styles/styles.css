@@ -14,13 +14,22 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
-  background: #F2F2F2;
+  background-color: #F2F2F2;
+  margin: 0 40px;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 /*Стилизация хедера*/
@@ -31,8 +40,18 @@ body {
   background-color: #FFFFFF;
 }
 
+.navigation {
+  display: flex;
+}
+
 .list {
   list-style-type: none;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 630px;
 }
 
 .link {
@@ -56,11 +75,20 @@ body {
 }
 
 /*Стилизация приветствия на главной странице*/
+.main-container {
+  flex-grow: 1;
+}
+
 .welcome {
   background-image: url("../images/index-mountains-background.jpg");
   background-repeat: no-repeat;
   width: 1200px;
-  height: 485px;
+  min-height: 485px;
+}
+
+.welcome-sedona {
+  display: block;
+  margin: 0 auto;
 }
 
 /*Всавить ёлочку*/
@@ -68,6 +96,8 @@ body {
 .search {
   background-color: #FFFFFF;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .preview-title,
@@ -90,6 +120,22 @@ body {
 .advantages {
   text-align: center;
   color: #000000;
+}
+
+.advantages-list,
+.travel-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-item,
+.travel-item {
+  width: 400px;
+  text-align: center;
+  align-self: stretch;
 }
 
 .advantages-title,
@@ -194,6 +240,23 @@ body {
 /*Стилизация футера*/
 .pade-footer {
   background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-social {
+  width: 142px;
+}
+
+.footer-contact {
+  width: 720px;
+  text-align: center;
+}
+
+.footer-logo {
+  width: 115px;
 }
 
 .footer-contact-phone {
