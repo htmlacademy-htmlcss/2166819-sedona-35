@@ -67,76 +67,69 @@
           </ul>
         </div>
 
-        <div class="search-hotel-conteiner">
-          <section class="search-hotel">
-            <h2 class="visually-hidden">Параметры поиска гостиниц в Седоне</h2>
-            <form class="search-filter" action="https://echo.htmlacademy.ru/" method="get">
-
-              <fieldset class="search-filter-group">
-                <legend class="search-filter-title">Инфраструктура:</legend>
-                <ul class="search-filter-list list">
-                  <li class="search-filter-item">
-                    <label class="control">
-                      <input class="control-input" type="checkbox" checked name="swimming-pool">
-                      Бассейн
-                    </label>
-                  </li>
-                  <li class="search-filter-item">
-                    <label class="control">
-                      <input class="control-input" type="checkbox" checked name="parking">
-                      Парковка
-                    </label>
-                  </li>
-                  <li class="search-filter-item">
-                    <label class="control">
-                      <input class="control-input" type="checkbox" name="Wi-Fi">
-                      Wi-Fi
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-
-              <fieldset class="search-filter-group">
-                <legend class="search-filter-title">Тип жилья:</legend>
-                <ul class="search-filter-list list">
-                  <li class="search-filter-item">
-                    <label class="control">
-                      <input class="control-input" type="radio" checked name="type-of-housing" value="hotel">
-                      Гостиница
-                    </label>
-                  </li>
-                  <li class="search-filter-item">
-                    <label class="control">
-                      <input class="control-input" type="radio" name="type-of-housing" value="motel">
-                      Мотель
-                    </label>
-                  </li>
-                  <li class="search-filter-item">
-                    <label class="control">
-                      <input class="control-input" type="radio" name="type-of-housing" value="apartments">
-                      Апартаменты
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-
-              <!-- Раздел вставлен для разметки, пока приблизительно  -->
-              <fieldset class="price-filter">
-                <legend class="price-filter-title">Стоимость, ₽:</legend>
-                <label class="price-range">
-                  <input class="price-input-">
-                  <input class="price-input-range" type="range" name="price-of-housing" value="price" min="0"
-                    max="15000">
+        <h2 class="visually-hidden">Параметры поиска гостиниц в Седоне</h2>
+        <form class="search-filter" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="search-filter-group">
+            <legend class="search-filter-title">Инфраструктура:</legend>
+            <ul class="search-filter-list list">
+              <li class="search-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" checked name="swimming-pool">
+                  Бассейн
                 </label>
-              </fieldset>
+              </li>
+              <li class="search-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" checked name="parking">
+                  Парковка
+                </label>
+              </li>
+              <li class="search-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="Wi-Fi">
+                  Wi-Fi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
 
-              <div class="button-search-conteiner">
-                <button class="button-search button-submit" type="submit">Применить</button>
-                <button class="button-search button-reset" type="reset">Сбросить</button>
-              </div>
-            </form>
-          </section>
-        </div>
+          <fieldset class="search-filter-group">
+            <legend class="search-filter-title">Тип жилья:</legend>
+            <ul class="search-filter-list list">
+              <li class="search-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" checked name="type-of-housing" value="hotel">
+                  Гостиница
+                </label>
+              </li>
+              <li class="search-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="type-of-housing" value="motel">
+                  Мотель
+                </label>
+              </li>
+              <li class="search-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="type-of-housing" value="apartments">
+                  Апартаменты
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <!-- Раздел вставлен для разметки, пока приблизительно  -->
+          <fieldset class="price-filter">
+            <legend class="price-filter-title">Стоимость, ₽:</legend>
+            <label class="price-range">
+              <input class="price-input-range" type="range" name="price-of-housing" value="price" min="0" max="15000">
+            </label>
+          </fieldset>
+
+          <div class="button-search-conteiner">
+            <button class="button-search button-submit" type="submit">Применить</button>
+            <button class="button-search button-reset" type="reset">Сбросить</button>
+          </div>
+        </form>
       </header>
 
       <div class="catalog-conteiner">
