@@ -35,7 +35,6 @@ body {
   background-color: #FFFFFF;
 }
 
-
 /*Стилизация хедера*/
 .page-header {
   font-weight: 700;
@@ -127,22 +126,22 @@ body {
 .advantages {
   text-align: center;
   color: #000000;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-list,
 .travel-list {
   display: flex;
-  flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 .advantages-item,
 .travel-item {
   width: 400px;
   min-height: 384px;
-  text-align: center;
-  align-self: stretch;
 }
 
 .advantages-title,
@@ -156,7 +155,16 @@ body {
 .advantages-item-blue {
   background-color: #82B3D3;
   color: #FFFFFF;
+  display: flex;
   width: 100%;
+}
+
+.advantages-container {
+  min-width: 400px;
+}
+
+.canyon {
+  order: 1;
 }
 
 .advantages-item-white {
