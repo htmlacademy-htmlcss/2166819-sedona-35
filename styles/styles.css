@@ -14,13 +14,25 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
-  background: #F2F2F2;
+  background-color: #F2F2F2;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.white {
+  background-color: #FFFFFF;
 }
 
 /*Стилизация хедера*/
@@ -28,11 +40,25 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  background-color: #FFFFFF;
+}
+
+.navigation {
+  display: flex;
 }
 
 .list {
   list-style-type: none;
+}
+
+.navigation-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 630px;
+}
+
+.navigation-user {
+  width: 312px;
 }
 
 .link {
@@ -56,18 +82,28 @@ body {
 }
 
 /*Стилизация приветствия на главной странице*/
+.main-container {
+  flex-grow: 1;
+}
+
 .welcome {
   background-image: url("../images/index-mountains-background.jpg");
   background-repeat: no-repeat;
   width: 1200px;
-  height: 485px;
+  min-height: 485px;
+}
+
+.welcome-sedona {
+  display: block;
+  margin: 0 auto;
 }
 
 /*Всавить ёлочку*/
 .preview,
 .search {
-  background-color: #FFFFFF;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .preview-title,
@@ -90,6 +126,22 @@ body {
 .advantages {
   text-align: center;
   color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-list,
+.travel-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.advantages-item,
+.travel-item {
+  width: 400px;
+  min-height: 384px;
 }
 
 .advantages-title,
@@ -103,6 +155,16 @@ body {
 .advantages-item-blue {
   background-color: #82B3D3;
   color: #FFFFFF;
+  display: flex;
+  width: 100%;
+}
+
+.advantages-container {
+  min-width: 400px;
+}
+
+.canyon {
+  order: 1;
 }
 
 .advantages-item-white {
@@ -193,7 +255,26 @@ body {
 
 /*Стилизация футера*/
 .pade-footer {
-  background-color: #FFFFFF;
+  display: flex;
+  padding: 0 70px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-social {
+  width: 142px;
+  margin-right: 142px;
+}
+
+.footer-contact {
+  margin-left: auto;
+  width: 720px;
+  margin-right: 42px;
+}
+
+.footer-logo {
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .footer-contact-phone {
@@ -205,7 +286,7 @@ body {
   color: #000000;
 }
 
-/*Страница каталога*/
+/*_____________________________________Страница каталога______________________________*/
 .inner-header {
   background-image: url("../images/catalog-background.jpg");
   background-repeat: no-repeat;
@@ -213,6 +294,20 @@ body {
   min-height: 412px;
   background-color: #82B3D3;
   color: #FFFFFF;
+}
+
+.catalog-conteiner {
+  width: 1060px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.search-filter {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  align-self: stretch;
 }
 
 .inner-header-title {
@@ -230,13 +325,41 @@ body {
 .search-filter-group {
   font-size: 18px;
   line-height: 23px;
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
-.search-filter-title {
+.price-filter {
+  width: 288px;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.search-filter-list {
+  margin: 0;
+  padding: 0;
+}
+
+.search-filter-title,
+.price-filter-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
+}
+
+.button-reset {
+  background: none;
+}
+
+.button-search-conteiner {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  justify-content: end;
 }
 
 .button-search,
@@ -257,6 +380,10 @@ body {
   background-color: #82B3D3;
 }
 
+.result {
+  display: flex;
+}
+
 .search-result {
   font-weight: 700;
   font-size: 30px;
@@ -272,10 +399,14 @@ body {
 }
 
 /*Карточки отелей*/
-.housing-card-list,
-.result,
-.pagination-list {
-  background-color: #FFFFFF;
+
+.housing-card-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.housing-card-item {
+  align-self: stretch;
 }
 
 .housing-card-link {
@@ -310,10 +441,17 @@ body {
 }
 
 /*Пагинация*/
+.pagination-list {
+  display: flex;
+}
+
 .pagination-item {
   background-color: #82B3D3;
   border-radius: 4px;
   color: #FFFFFF;
+  min-width: 60px;
+  height: 60px;
+  text-align: center;
 }
 
 .pagination-current {
