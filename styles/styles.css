@@ -31,19 +31,32 @@ body {
   min-height: 100%;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .white {
   background-color: #FFFFFF;
 }
 
-/*Стилизация хедера*/
+/*_________________________________________Стилизация хедера______________________________*/
 .page-header {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  width: 100%;
 }
 
 .navigation {
   display: flex;
+  justify-content: space-between;
 }
 
 .list {
@@ -52,13 +65,32 @@ body {
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  width: 630px;
+}
+
+.navigation-item-logo {
+  display: block;
+  margin-left: 70px;
+  padding: 0;
+  position: relative;
+}
+
+.navigation-link {
+  display: block;
+  padding: 20px 16px;
 }
 
 .navigation-user {
-  width: 312px;
+  margin-right: 70px;
+}
+
+.navigation-user .navigation-link {
+  margin: 0;
+  padding: 0;
+  min-width: 44px;
+  min-height: 64px;
 }
 
 .link {
@@ -73,15 +105,34 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+  margin-top: 14px;
 }
 
 .button-navigation {
+  display: block;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  padding: 8px 34px;
 }
 
-/*Стилизация приветствия на главной странице*/
+.navigation-link-search {
+  background-image: url("../images/search.svg");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+.navigation-link-favorites {
+  background-image: url("../images/heard.svg");
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 17px;
+}
+
+
+
+/*__________________________Стилизация приветствия на главной странице______________________*/
 .main-container {
   flex-grow: 1;
 }
