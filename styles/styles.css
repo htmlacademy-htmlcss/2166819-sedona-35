@@ -71,10 +71,7 @@ body {
 }
 
 .navigation-item-logo {
-  display: block;
   margin-left: 70px;
-  padding: 0;
-  position: relative;
 }
 
 .navigation-link {
@@ -90,7 +87,6 @@ body {
   margin: 0;
   padding: 0;
   min-width: 44px;
-  min-height: 64px;
 }
 
 .link {
@@ -138,6 +134,8 @@ body {
 }
 
 .welcome {
+  display: flex;
+  flex-wrap: wrap;
   background-image: url("../images/index-mountains-background.jpg");
   background-repeat: no-repeat;
   width: 1200px;
@@ -147,11 +145,19 @@ body {
 .welcome-sedona {
   display: block;
   margin: 0 auto;
+  padding-top: 51px;
+  padding-bottom: 25px;
 }
 
-/*Всавить ёлочку*/
-.preview,
-.search {
+.vector-broken-line {
+  background-image: url("../images/vector-broken-line.svg");
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 57px;
+}
+
+.preview {
+  min-height: 282px;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -164,6 +170,12 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+}
+
+.preview-title {
+  max-width: 620px;
+  margin: auto;
+  margin-top: 69px;
 }
 
 .preview-description,
@@ -255,6 +267,12 @@ body {
   background-repeat: no-repeat;
 }
 
+.search {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
 /*Стилизация раздела поиска жилья*/
 .button-search,
 .pagination-link {
@@ -267,6 +285,7 @@ body {
 .newsletter {
   background-image: url("../images/background-subscribe.jpg");
   background-repeat: no-repeat;
+  background-size: 1200px;
   width: 1200px;
   min-height: 415px;
   text-align: center;
