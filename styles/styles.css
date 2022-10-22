@@ -185,7 +185,7 @@ body {
   color: #333333
 }
 
-/*______________Стилизация преимуществ на главной странице_______________________*/
+/*_______________________Стилизация преимуществ на главной странице_______________________*/
 .advantages {
   text-align: center;
   color: #000000;
@@ -209,11 +209,13 @@ body {
 
 .advantages-title,
 .travel-title {
+  display: block;
+  max-width: 175px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -235,6 +237,11 @@ body {
   padding: 92px 85px 111px 85px;
 }
 
+.advantages-item-white .advantages-container,
+.advantages-item-grey .advantages-container {
+  padding: 103px 85px 121px 85px;
+}
+
 .canyon {
   order: 1;
 }
@@ -251,15 +258,18 @@ body {
 .advantages-item-grey {
   display: flex;
   flex-direction: column;
-  padding-top: 103px;
 }
 
 .advantages-description,
 .travel-description {
-  display: block;
   color: #333333;
   margin: 0;
   padding: 0;
+}
+
+.advantages-description {
+  margin-top: 62px;
+  margin-bottom: 0;
 }
 
 .travel-item {
@@ -286,13 +296,14 @@ body {
   background-repeat: no-repeat;
 }
 
+/*_____________________________Стилизация раздела поиска жилья________________________*/
 .search {
   text-align: center;
   margin: 0;
-  padding: 0;
+  padding: 96px 304px;
+  max-height: 406px;
 }
 
-/*Стилизация раздела поиска жилья*/
 .button-search,
 .pagination-link {
   font-weight: 700;
@@ -300,7 +311,24 @@ body {
   line-height: 36px;
 }
 
-/*Стилизация подписки на рассылку*/
+.search-title {
+  margin: 0;
+}
+
+.search-description {
+  margin-top: 20px;
+  margin-bottom: 54px;
+}
+
+.search .button-search {
+  font-size: 20px;
+  line-height: 36px;
+  padding: 8px 50px;
+  margin: 0 auto;
+}
+
+
+/*______________________________Стилизация подписки на рассылку______________________*/
 .newsletter {
   background-image: url("../images/background-subscribe.jpg");
   background-repeat: no-repeat;
@@ -327,12 +355,20 @@ body {
 }
 
 .field {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  min-height: 52px;
+  width: 452px;
+  border:none;
+  padding-left: 20px;
 }
 
 .newsletter-button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -340,6 +376,14 @@ body {
   background-color: #82B3D3;
   border-radius: 0 4px 4px 0;
   color: #FFFFFF;
+  border:none;
+  min-width: 232px;
+}
+
+.newsletter-form {
+  font-weight: 400;
+  display: flex;
+
 }
 
 /*Стилизация футера*/
