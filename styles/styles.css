@@ -392,7 +392,7 @@ ul.navigation-list .navigation-item:nth-child(2) {
 }
 
 .newsletter-catalog {
-  background-color:  #FFFFFF;
+  background-color: #FFFFFF;
   color: #000000;
 }
 
@@ -402,7 +402,7 @@ ul.navigation-list .navigation-item:nth-child(2) {
   line-height: 24px;
   min-height: 52px;
   width: 452px;
-  border:none;
+  border: none;
   padding-left: 20px;
   background-color: #F2F2F2;
 }
@@ -419,7 +419,7 @@ ul.navigation-list .navigation-item:nth-child(2) {
   background-color: #82B3D3;
   border-radius: 0 4px 4px 0;
   color: #FFFFFF;
-  border:none;
+  border: none;
   min-width: 232px;
 }
 
@@ -441,19 +441,37 @@ ul.navigation-list .navigation-item:nth-child(2) {
   padding: 0 70px;
 }
 
+.footer-social-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
 .social-vk {
   background-image: url("../images/vk.svg");
   background-repeat: no-repeat;
+  width: 48px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
 }
 
 .social-telegram {
   background-image: url("../images/telegram.svg");
   background-repeat: no-repeat;
+  width: 48px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
 }
 
 .social-youtube {
   background-image: url("../images/youtube.svg");
   background-repeat: no-repeat;
+  width: 48px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-contact-phone {
@@ -607,7 +625,7 @@ ul.navigation-list .navigation-item:nth-child(2) {
   line-height: 21px;
 }
 
-/*Карточки отелей*/
+/*______________________________________Карточки отелей_________________________________*/
 
 .housing-card-list {
   display: flex;
