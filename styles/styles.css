@@ -284,16 +284,30 @@ body {
 .house {
   background-image: url("../images/housing.svg");
   background-repeat: no-repeat;
+  background-position: 163px 80px;
 }
 
 .food {
   background-image: url("../images/food.svg");
   background-repeat: no-repeat;
+  background-position: 163px 81px;
 }
 
 .souvenirs {
   background-image: url("../images/souvenirs.svg");
   background-repeat: no-repeat;
+  background-position: 168px 78px;
+}
+
+.travel-container {
+  display: flex;
+  flex-direction: column;
+  margin: 182px auto 81px;
+  max-width: 230px;
+}
+
+.travel-title {
+  margin-bottom: 30px;
 }
 
 /*_____________________________Стилизация раздела поиска жилья________________________*/
@@ -334,23 +348,38 @@ body {
   background-repeat: no-repeat;
   background-size: 1200px;
   width: 1200px;
-  min-height: 415px;
   text-align: center;
   color: #FFFFFF;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding-top: 96px;
+  padding-bottom: 104px;
+}
+
+.newsletter-title {
+  margin: 0;
+  padding: 0;
 }
 
 .newsletter-description {
   font-size: 22px;
   line-height: 26px;
   color: #FFFFFF;
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding: 0;
 }
 
+.newsletter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 54px;
+  margin-bottom: auto;
+}
+
+
+
 .newsletter-catalog {
-  background: #FFFFFF;
+  background-color:  #FFFFFF;
   color: #000000;
 }
 
@@ -383,31 +412,32 @@ body {
 .newsletter-form {
   font-weight: 400;
   display: flex;
-
 }
 
-/*Стилизация футера*/
+
+
+/*_____________________________________________________Стилизация футера________________________________*/
 .pade-footer {
   display: flex;
-  padding: 0 70px;
   justify-content: space-between;
   align-items: center;
+  min-height: 120px;
+  padding: 0 70px;
 }
 
-.footer-social {
-  width: 142px;
-  margin-right: 142px;
+.social-vk {
+  background-image: url("../images/vk.svg");
+  background-repeat: no-repeat;
 }
 
-.footer-contact {
-  margin-left: auto;
-  width: 720px;
-  margin-right: 42px;
+.social-telegram {
+  background-image: url("../images/telegram.svg");
+  background-repeat: no-repeat;
 }
 
-.footer-logo {
-  margin-left: auto;
-  margin-right: 0;
+.social-youtube {
+  background-image: url("../images/youtube.svg");
+  background-repeat: no-repeat;
 }
 
 .footer-contact-phone {
@@ -447,6 +477,8 @@ body {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  margin: 0;
+  padding: 0;
 }
 
 /*Хлебные крошки или как вернуться домой*/
