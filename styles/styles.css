@@ -77,6 +77,10 @@ body {
   padding: 0;
 }
 
+.navigation-item {
+  padding: 20px 16px;
+}
+
 .navigation-logo {
   display: block;
   margin-bottom: -6px;
@@ -90,7 +94,6 @@ body {
 
 .navigation-link {
   display: block;
-  margin: 20px 16px;
   text-transform: capitalize;
 }
 
