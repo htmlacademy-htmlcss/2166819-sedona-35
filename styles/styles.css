@@ -81,6 +81,7 @@ body {
   display: block;
   padding: 20px 16px;
   text-transform: capitalize;
+  position: relative;
 }
 
 .navigation-logo {
@@ -112,7 +113,26 @@ body {
   padding: 8px 34px;
 }
 
-.navigation-user-item .navigation-link{
+/* СОСТОЯНИЯ ДЛЯ КНОПКИ В ХЕДЕРЕ */
+.button-navigation:hover {
+  background-color: #615048;
+}
+
+.button-navigation:focus {
+  background-color: #615048;
+  outline: none;
+}
+
+.button-navigation:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-navigation:disabled {
+  background-color: #E5E5E5;
+}
+
+.navigation-user-item .navigation-link {
   min-width: 44px;
   min-height: 64px;
   display: flex;
@@ -135,6 +155,15 @@ body {
   border-radius: 50%;
   position: absolute;
   margin: 11px 4px 33px 20px;
+}
+
+.navigation-link-current::before {
+  position: absolute;
+  right: 16px;
+  bottom: -2px;
+  left: 16px;
+  border: 2px solid #756257;
+  content: "";
 }
 
 /*__________________________Стилизация приветствия на главной странице______________________*/
@@ -243,6 +272,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 92px 85px 111px 85px;
+  position: relative;
 }
 
 .advantages-item-white .advantages-container,
@@ -280,6 +310,27 @@ body {
   margin-bottom: 0;
 }
 
+.advantages-description-blue::before {
+  position: absolute;
+  left: 170px;
+  top: 178px;
+  width: 60px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+  content: "";
+}
+
+.advantages-description::before {
+  position: absolute;
+  left: 170px;
+  top: 189px;
+  width: 60px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+  ;
+  content: "";
+}
+
 .travel-item {
   background-color: rgba(131, 179, 211, 0.12);
 }
@@ -293,7 +344,6 @@ body {
   background-image: url("../images/housing.svg");
   background-repeat: no-repeat;
   background-position: 163px 80px;
-
 }
 
 .food {
@@ -351,6 +401,24 @@ body {
   margin: 0 auto;
 }
 
+/*СОСТОЯНИЯ ДЛЯ КНОПКИ В РАЗДЕЛЕ "ЗАИНТЕРИСОВАЛИСЬ?"*/
+.search .button-search:hover {
+  background-color: #615048;
+}
+
+.search .button-search:focus {
+  background-color: #615048;
+  outline: none;
+}
+
+.search .button-search:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.search .button-search:disabled {
+  background-color: #E5E5E5;
+}
 
 /*______________________________Стилизация подписки на рассылку______________________*/
 .newsletter {
@@ -404,6 +472,7 @@ body {
   border: none;
   padding: 0 0 0 20px;
   background-color: #F2F2F2;
+  border-radius: 4px 0 0 4px;
 }
 
 .newsletter-button {
@@ -422,6 +491,25 @@ body {
   padding: 0;
 }
 
+/*СОСТОЯНИЯ ДЛЯ КНОПКИ В РАЗДЕЛЕ "ПОДПИШИТСЬ НА РАССЫЛКУ"*/
+.newsletter-button:hover {
+  background-color: #68A2CA;
+}
+
+.newsletter-button:focus {
+  background-color: #68A2CA;
+  outline: none;
+}
+
+.newsletter-button:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.newsletter-button:disabled {
+  background-color: #E5E5E5;
+}
+
 .newsletter-catalog .newsletter-description {
   color: #333333;
 }
@@ -436,13 +524,16 @@ body {
 }
 
 .footer-social-list {
-  display: grid;
-  grid-template-columns: 48px 48px 48px;
+  display: flex;
   margin: 0;
   padding: 0;
-  width: 48px;
-  height: 40px;
-  justify-items: center;
+}
+
+.footer-social-link {
+  min-width: 48px;
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -454,6 +545,23 @@ body {
   text-decoration: none;
   color: #000000;
 }
+
+/* .footer-social-icon {
+  fill: #83B3D3;
+}
+
+.footer-social-icon:hover  {
+  fill: #68A2CA;
+}
+
+.footer-social-icon:focus  {
+  fill: #68A2CA;
+}
+
+.footer-social-icon:active {
+  fill: rgba(104, 162, 202, 0.3);
+} */
+
 
 /*_____________________________________Страница каталога______________________________*/
 .inner-header {
