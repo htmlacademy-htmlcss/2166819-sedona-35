@@ -24,12 +24,13 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #000000;
-  background-color: #F2F2F2;
+  background-color: #FFFFFF;
   width: 1200px;
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  margin: 0;
+  margin: auto;
+  box-shadow: 40px 0 0 0 #F2F2F2, -40px 0 0 0 #F2F2F2;
 }
 
 .visually-hidden {
@@ -113,25 +114,6 @@ body {
   padding: 8px 34px;
 }
 
-/* СОСТОЯНИЯ ДЛЯ КНОПКИ В ХЕДЕРЕ */
-.button-navigation:hover {
-  background-color: #615048;
-}
-
-.button-navigation:focus {
-  background-color: #615048;
-  outline: none;
-}
-
-.button-navigation:active {
-  background-color: #756157;
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.button-navigation:disabled {
-  background-color: #E5E5E5;
-}
-
 .navigation-user-item .navigation-link {
   min-width: 44px;
   min-height: 64px;
@@ -160,9 +142,10 @@ body {
 .navigation-link-current::before {
   position: absolute;
   right: 16px;
-  bottom: -2px;
+  bottom: -1px;
   left: 16px;
-  border: 2px solid #756257;
+  height: 2px;
+  background-color: #756257;
   content: "";
 }
 
@@ -401,25 +384,6 @@ body {
   margin: 0 auto;
 }
 
-/*СОСТОЯНИЯ ДЛЯ КНОПКИ В РАЗДЕЛЕ "ЗАИНТЕРИСОВАЛИСЬ?"*/
-.search .button-search:hover {
-  background-color: #615048;
-}
-
-.search .button-search:focus {
-  background-color: #615048;
-  outline: none;
-}
-
-.search .button-search:active {
-  background-color: #756157;
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.search .button-search:disabled {
-  background-color: #E5E5E5;
-}
-
 /*______________________________Стилизация подписки на рассылку______________________*/
 .newsletter {
   background-image: url("../images/background-subscribe.jpg");
@@ -491,25 +455,6 @@ body {
   padding: 0;
 }
 
-/*СОСТОЯНИЯ ДЛЯ КНОПКИ В РАЗДЕЛЕ "ПОДПИШИТСЬ НА РАССЫЛКУ"*/
-.newsletter-button:hover {
-  background-color: #68A2CA;
-}
-
-.newsletter-button:focus {
-  background-color: #68A2CA;
-  outline: none;
-}
-
-.newsletter-button:active {
-  background-color: #82B3D3;
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.newsletter-button:disabled {
-  background-color: #E5E5E5;
-}
-
 .newsletter-catalog .newsletter-description {
   color: #333333;
 }
@@ -546,21 +491,22 @@ body {
   color: #000000;
 }
 
-/* .footer-social-icon {
-  fill: #83B3D3;
+/*СОСТОЯНИЯ ДЛЯ ИКОНОК СОЦ.СЕТЕЙ*/
+.footer-social-link {
+  color: #83B3D3;
 }
 
-.footer-social-icon:hover  {
-  fill: #68A2CA;
+.footer-social-link:hover {
+  color: #68A2CA;
 }
 
-.footer-social-icon:focus  {
-  fill: #68A2CA;
+.footer-social-link:focus {
+  color: #68A2CA;
 }
 
-.footer-social-icon:active {
-  fill: rgba(104, 162, 202, 0.3);
-} */
+.footer-social-link:active {
+  color: rgba(104, 162, 202, 0.3);
+}
 
 
 /*_____________________________________Страница каталога______________________________*/
@@ -599,6 +545,9 @@ body {
 .breadcrumbs-list {
   margin-top: 8px;
   margin-bottom: 40px;
+  padding: 0;
+  display: flex;
+
 }
 
 .breadcrumbs-link {
@@ -607,6 +556,10 @@ body {
   padding: 0;
 }
 
+.breadcrumbs-house {
+  display: block;
+  margin-right: 28px;
+}
 
 /*______________________________Параметры поиска гостиниц в седоне______________*/
 .search-filter-group {
@@ -845,6 +798,14 @@ body {
   grid-row: 4 / 5;
 }
 
+.housing-stars-4 {
+  margin-top: 10px;
+  background-image: url("../images/star.svg");
+  width: 18px;
+  height: 17px;
+}
+
+
 /*_______________________________________________Пагинация________________________________*/
 .pagination-list {
   display: flex;
@@ -856,21 +817,121 @@ body {
   background-color: #82B3D3;
   border-radius: 4px;
   color: #FFFFFF;
+  margin-right: 8px;
+}
+
+.pagination-link {
   min-width: 60px;
   height: 60px;
-  text-align: center;
-  margin-right: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.continuation {
-  color: #000000;
-  background: none;
-}
-
 .pagination-current {
   background-color: #F2F2F2;
   color: #000000;
+}
+
+/*____________________________________________СОСТОЯНИЯ__________________________________*/
+
+/*СОСТОЯНИЯ ДЛЯ ГОЛУБЫХ КНОПОК*/
+.newsletter-button:hover,
+.add-to-favorites:hover,
+.button-submit:hover,
+.pagination-item:not(:first-child):hover {
+  background-color: #68A2CA;
+}
+
+.newsletter-button:focus,
+.add-to-favorites:focus,
+.button-submit:focus,
+.pagination-item:not(:first-child):focus {
+  outline: none;
+  background-color: #68A2CA;
+}
+
+.newsletter-button:active,
+.add-to-favorites:active,
+.button-submit:active,
+.pagination-item:not(:first-child):active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.newsletter-button:disabled,
+.add-to-favorites:disabled,
+.button-submit:disabled,
+.pagination-item:not(:first-child):disabled {
+  background-color: #E5E5E5;
+}
+
+
+/*СОСТОЯНИЯ ДЛЯ КОРИЧНЕВЫХ КНОПОК*/
+.button-navigation:hover,
+.housing-card-button:hover,
+.search .button-search:hover,
+.housing-card-button:hover {
+  background-color: #615048;
+}
+
+.button-navigation:focus,
+.housing-card-button:focus,
+.search .button-search:focus,
+.housing-card-button:focus {
+  outline: none;
+  background-color: #615048;
+}
+
+.button-navigation:active,
+.housing-card-button:active,
+.search .button-search:active,
+.housing-card-button:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-navigation:disabled,
+.housing-card-button:disabled,
+.search .button-search:disabled,
+.housing-card-button:disabled {
+  background-color: #E5E5E5;
+}
+
+/*СОСТОЯНИЯ ПРОЗРАЧНОЙ КНОПКИ*/
+.button-reset:hover {
+  opacity: 0.6;
+}
+
+.button-reset:focus {
+  outline: none;
+  border: 3px solid #83B3D3;
+
+}
+
+.button-reset:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-reset:disabled {
+  opacity: 0.1;
+}
+
+/*СОСТОЯНИЯ ЗЕЛЕНОЙ КНОПКИ*/
+.green:hover {
+  background-color: #6C9E42;
+}
+
+.green:focus {
+  outline: none;
+  background-color: #6C9E42;
+}
+
+.green:active {
+  background-color: #7DB54F;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.green:disabled {
+  background-color: #E5E5E5;
 }
