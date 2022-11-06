@@ -19,7 +19,7 @@
               </a>
             </li>
             <li class="navigation-item">
-              <a class="link navigation-link navigation-link-current" href="#">Главная</a>
+              <a class="link navigation-link navigation-link-current" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="link navigation-link" href="#">О седоне</a>
@@ -64,7 +64,6 @@
             </li>
           </ul>
         </nav>
-      </header>
       </header>
 
       <main class="main-index white">
@@ -218,6 +217,80 @@
           </a>
         </section>
       </footer>
+
+      <div class="modal-conteiner modal-container-close">
+        <div class="modal modal-auth">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть.</span>
+          </button>
+
+          <section class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+
+              <fieldset class="modal-filter date">
+                <legend class="visually-hidden">Выбор даты заселения в госиницу Седоны.</legend>
+                <ul class="filter-list list">
+                  <li class="filter-date-item">
+                    <label class="arrival dates-of-stay">
+                      <span class="date-description">Дата заезда:</span>
+                      <input class="date-input date-chosen calendar" type="text" name="arrival-date"
+                        value="27 апреля 2020" required>
+                      <span class="yes error">Мы не можем отправить вас в прошлое.</span>
+                    </label>
+                  </li>
+                  <li class="filter-date-item">
+                    <label class="departure dates-of-stay">
+                      <span class="date-description">Дата выезда:</span>
+                      <input class="date-input date-chosen calendar" type="text" name="departure-date"
+                        value="1 сентября 2021" required>
+                      <span class="not error">На эти даты есть свободные номера. Пока есть.</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+
+              <fieldset class="modal-filter persons">
+                <legend class="visually-hidden">Выбор количества персон.</legend>
+                <ul class="filter-list list">
+                  <li class="filter-persons-item adults-persons">
+                    <span class="persons-description">Взрослые:</span>
+                    <button class="minus">
+                      <span class="visually-hidden">Меньше.</span>
+                    </button>
+                    <label class="number-of-persons">
+                      <input class="persons-input calendar" type="number" name="adults-persons" value="2">
+                    </label>
+                    <button class="plus">
+                      <span class="visually-hidden">Больше.</span>
+                    </button>
+                  </li>
+
+                  <li class="filter-persons-item children-persons">
+                    <span class="persons-description">Дети:</span>
+                    <button class="minus">
+                      <span class="visually-hidden">Меньше.</span>
+                    </button>
+                    <label class="number-of-persons">
+                      <input class="persons-input calendar" type="number" name="children-persons" value="2">
+                    </label>
+                    <button class="plus">
+                      <span class="visually-hidden">Больше.</span>
+                    </button>
+                  </li>
+                </ul>
+              </fieldset>
+
+              <section class="modal-search-button">
+                <button class="search-button" type="submit">
+                  Найти
+                </button>
+
+              </section>
+            </form>
+          </section>
+        </div>
+      </div>
     </div>
   </body>
 
