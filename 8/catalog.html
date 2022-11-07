@@ -20,7 +20,7 @@
               </a>
             </li>
             <li class="navigation-item">
-              <a class="link navigation-link" href="#">Главная</a>
+              <a class="link navigation-link" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="link navigation-link" href="#">О седоне</a>
@@ -89,26 +89,29 @@
           </ul>
 
           <h2 class="visually-hidden">Параметры поиска гостиниц в Седоне</h2>
-          <form class="search-filter" action="https://echo.htmlacademy.ru/" method="get">
+          <form class="search-filter" action="https://echo.htmlacademy.ru/" method="post">
             <fieldset class="search-filter-group infrastructure">
               <legend class="search-filter-title">Инфраструктура:</legend>
               <ul class="search-filter-list list">
                 <li class="search-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" checked name="swimming-pool">
-                    Бассейн
+                    <input class="visually-hidden control-input" type="checkbox" checked name="swimming-pool">
+                    <span class="control-mark-checkbox"></span>
+                    <span class="control-label">Бассейн</span>
                   </label>
                 </li>
                 <li class="search-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" checked name="parking">
-                    Парковка
+                    <input class="visually-hidden control-input" type="checkbox" checked name="parking">
+                    <span class="control-mark-checkbox"></span>
+                    <span class="control-label">Парковка</span>
                   </label>
                 </li>
                 <li class="search-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="Wi-Fi">
-                    Wi-Fi
+                    <input class="visually-hidden control-input" type="checkbox" name="Wi-Fi">
+                    <span class="control-mark-checkbox"></span>
+                    <span class="control-label">Wi-Fi</span>
                   </label>
                 </li>
               </ul>
@@ -119,31 +122,56 @@
               <ul class="search-filter-list list">
                 <li class="search-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" checked name="type-of-housing" value="hotel">
-                    Гостиница
+                    <input class="visually-hidden control-input" type="radio" checked name="type-of-housing"
+                      value="hotel">
+                    <span class="control-mark-radio"></span>
+                    <span class="control-label">Гостиница</span>
                   </label>
                 </li>
                 <li class="search-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="type-of-housing" value="motel">
-                    Мотель
+                    <input class="visually-hidden control-input" type="radio" name="type-of-housing" value="motel">
+                    <span class="control-mark-radio"></span>
+                    <span class="control-label">Мотель</span>
                   </label>
                 </li>
                 <li class="search-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="type-of-housing" value="apartments">
-                    Апартаменты
+                    <input class="visually-hidden control-input" type="radio" name="type-of-housing" value="apartments">
+                    <span class="control-mark-radio"></span>
+                    <span class="control-label">Апартаменты</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
 
-            <!-- Раздел вставлен для разметки, пока приблизительно  -->
             <fieldset class="price-filter">
               <legend class="price-filter-title">Стоимость, ₽:</legend>
-              <label class="price-range">
-                <input class="price-input-range" type="range" name="price-of-housing" min="0" max="15000">
-              </label>
+
+              <div class="range-price-conteiner">
+                <label class="range-price-starting">
+                  <input class="range-input" type="number" name="starting-price" value="0">
+                  <span class="range">от</span>
+                </label>
+                <label class="range-price-final">
+                  <input class="range-input" type="number" name="final-price" value="9000">
+                  <span class="range">до</span>
+                </label>
+              </div>
+
+              <div class="range-bar-conteiner">
+                <div class="range-bar-scale-1">
+                  <span class="visually-hidden">Шкала изменения цены.</span>
+                </div>
+                <div class="range-bar-scale-2">
+                  <button class="range-bar-toggle toggle-min">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                  </button>
+                  <button class="range-bar-toggle toggle-max">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                  </button>
+                </div>
+              </div>
             </fieldset>
 
             <div class="button-search-conteiner">
@@ -151,6 +179,7 @@
               <button class="button-search button-reset" type="reset">Сбросить</button>
             </div>
           </form>
+
         </header>
 
         <div class="catalog-conteiner">

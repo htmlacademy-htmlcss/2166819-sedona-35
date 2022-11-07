@@ -35,7 +35,7 @@ body {
   width: 1200px;
   background-color: #FFFFFF;
   margin: auto;
-  box-shadow: 40px 0 0 0 #F2F2F2, -40px 0 0 0 #F2F2F2;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .visually-hidden {
@@ -502,7 +502,7 @@ body {
 .inner-header {
   background-image: url("../images/catalog-background.jpg");
   background-repeat: no-repeat;
-
+  background-size: auto 412px;
   background-color: #82B3D3;
   color: #FFFFFF;
   padding: 35px 70px 70px 70px;
@@ -607,7 +607,7 @@ body {
 }
 
 .housing-type {
-  margin-right: 160px;
+  margin-right: 150px;
 }
 
 .button-reset {
@@ -694,6 +694,148 @@ body {
 .card-grid-toggle-current {
   border: 2px solid #000000;
   border-radius: 4px;
+}
+
+/* ДОБАВЛЕНИЕ КРАСЫВЫХ КНОПОЧЕК В РАЗДЕЛ ПАРАМЕРТРОВ ПОСИСКА */
+.search-filter-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.control {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.control-mark-checkbox {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  top: 2px;
+}
+
+.control-mark-radio {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  top: 2px;
+}
+
+.control-label {
+  margin-left: 36px;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark-checkbox::before {
+  background-image: url("../images/check-mark.svg");
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 10px;
+  top: 5px;
+  left: 4px;
+  position: absolute;
+  content: "";
+}
+
+.control-input[type="radio"]:checked + .control-mark-radio::before {
+  width: 10px;
+  height: 10px;
+  background-color: #3F5E72;
+  border-radius: 50%;
+  top: 5px;
+  left: 5px;
+  position: absolute;
+  content: "";
+}
+
+/* РАЗДЕЛ С РЕГУЛИРОВКОЙ ЦЕНЫ */
+
+.range-price-conteiner {
+  display: grid;
+  gap: 2px;
+  grid-template-columns: 143px 143px;
+  margin-top: 32px;
+  margin-bottom: 36px;
+}
+
+.range-price-starting,
+.range-price-final {
+  position: relative;
+}
+
+.range-input {
+  width: 103px;
+  background: #F2F2F2;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  padding: 12px 20px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.range-price-final .range-input {
+  border-radius: 0 4px 4px 0;
+}
+
+.range {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 11px;
+  right: 20px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button,
+.persons-input::-webkit-outer-spin-button,
+.persons-input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+/* ШКАЛА */
+.range-bar-conteiner {
+  position: relative;
+}
+
+.range-bar-scale-1 {
+  width: 287px;
+  height: 4px;
+  background-color: #FFFFFF;
+  opacity: 0.3;
+}
+
+.range-bar-scale-2 {
+  width: 226px;
+  height: 4px;
+  background-color: #FFFFFF;
+  top: 0;
+  position: absolute;
+}
+
+.range-bar-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  border: none;
+  top: -8px;
+}
+
+.toggle-max {
+  left: 206px;
 }
 
 /*______________________________________Карточки отелей_________________________________*/
@@ -800,30 +942,23 @@ body {
 .housing-stars {
   grid-column: 1 / 2;
   grid-row: 4 / 5;
+
+  margin-top: 10px;
+  background-image: url("../images/star.svg");
+  background-repeat: space;
+  height: 17px;
 }
 
 .housing-stars-4 {
-  margin-top: 10px;
-  background-image: url("../images/star.svg");
-  background-repeat: space;
-  width: 90px;
-  height: 17px;
+  width: 89px;
 }
 
 .housing-stars-3 {
-  margin-top: 10px;
-  background-image: url("../images/star.svg");
-  background-repeat: space;
   width: 66px;
-  height: 17px;
 }
 
 .housing-stars-2 {
-  margin-top: 10px;
-  background-image: url("../images/star.svg");
-  background-repeat: space;
   width: 42px;
-  height: 17px;
 }
 
 /*_______________________________________________Пагинация________________________________*/
@@ -934,8 +1069,7 @@ body {
 }
 
 .button-reset:focus {
-  outline: none;
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
 }
 
 .button-reset:active {
@@ -991,7 +1125,7 @@ body {
 
 .footer-contact-phone:focus,
 .footer-logo-link:focus {
-  order: none;
+  border: none;
   color: #756157;
 }
 
@@ -999,6 +1133,25 @@ body {
 .footer-logo-link:active {
   color: rgba(117, 97, 87, 0.3);
 }
+
+/*СОСТОЯНИЯ ДЛЯ РАЗДЕЛА ПОИСКА ЖИЛЬЯ*/
+
+.control:hover {
+  opacity: 0.6;
+}
+
+.control-mark-radio:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.control-mark-checkbox:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.control:active {
+  opacity: 0.3;
+}
+
 
 /* ________________________ДОПОЛНИТЕЛЬНЫЕ СОСТОЯНИЯ ДЛЯ КРАСОТЫ ______________________*/
 
@@ -1009,8 +1162,7 @@ body {
 }
 
 .navigation-link:focus {
-  outline: none;
-  border: 1px solid #83B3D3;
+  outline: 1px solid #83B3D3;
   color: #68A2CA;
 }
 
@@ -1026,4 +1178,240 @@ body {
 
 .navigation-user-item .navigation-link:active {
   color: rgba(104, 162, 202, 0.3);
+}
+
+
+/* МОДАЛЬНОЕ ОКНО */
+.modal-conteiner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: rgba(242, 242, 242, 0.8);
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 64px 70px;
+  background-color: #FFFFFF;
+  border-radius: 30px;
+}
+
+.modal-auth {
+  width: 577px;
+}
+
+.modal-close-button {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: none;
+  top: 70px;
+  right: 52px;
+}
+
+.modal-close-button::before {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: #000000;
+  transform: rotate(45deg);
+  left: 16px;
+  content: "";
+}
+
+.modal-close-button::after {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: #000000;
+  transform: rotate(-45deg);
+  left: 16px;
+  content: "";
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin: 0 164px 64px 0;
+  padding: 0;
+}
+
+.modal-filter {
+  border: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+}
+
+.filter-list {
+  margin: 0;
+  padding: 0;
+}
+
+.date-description {
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.date-chosen {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.dates-of-stay {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-bottom: 23px;
+}
+
+.date-input {
+  min-width: 420px;
+  min-height: 48px;
+  margin: auto 0;
+  padding: 0;
+  padding-left: 20px;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  border: none;
+}
+
+.date-selected {
+  position: absolute;
+  top: 0;
+  left: 157px;
+}
+
+.error {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  margin: 0;
+  color: #FF5757;
+  margin-top: 4px ;
+  margin-left: 157px;
+}
+
+.not {
+  color: #333333;
+}
+
+.persons .filter-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-persons-item {
+  width: 247px;
+  display: flex;
+  align-items: center;
+}
+
+.persons-description {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.adults-persons .persons-description {
+  margin-right: 46px;
+}
+
+.children-persons .persons-description {
+  margin-right: 82px;
+}
+
+.persons-input {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  background: #F2F2F2;
+  border: none;
+
+  width: 21px;
+  height: 48px;
+
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+}
+
+.modal-search-button {
+  margin-top: 48px;
+}
+
+.search-button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+  background-color: #83B3D3;
+  border-radius: 10px;
+  border: none;
+
+  min-width: 577px;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+.minus, .plus  {
+  position: relative;
+  width: 40px;
+  height: 48px;
+  margin: 0;
+  border: none;
+  padding: 14px 10px;
+}
+
+.minus::before {
+  position: absolute;
+  width: 2px;
+  height: 14px;
+  background-color: rgba(117, 97, 87, 0.3);
+  transform: rotate(-90deg);
+  top: 16px;
+  left: 20px;
+  content: "";
+}
+
+.plus::before {
+  position: absolute;
+  width: 2px;
+  height: 14px;
+  background-color: rgba(117, 97, 87, 0.3);
+  transform: rotate(-90deg);
+  top: 16px;
+  left: 20px;
+  content: "";
+}
+
+.plus::after {
+  position: absolute;
+  width: 2px;
+  height: 14px;
+  background-color: rgba(117, 97, 87, 0.3);
+  top: 16px;
+  left: 20px;
+  content: "";
+}
+
+.modal-container-close {
+  display: none;
 }
