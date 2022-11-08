@@ -220,7 +220,7 @@
 
       <div class="modal-conteiner modal-container-close">
         <div class="modal modal-auth">
-          <button class="modal-close-button">
+          <button class="modal-close-button" type="button">
             <span class="visually-hidden">Закрыть.</span>
           </button>
 
@@ -231,21 +231,43 @@
               <fieldset class="modal-filter date">
                 <legend class="visually-hidden">Выбор даты заселения в госиницу Седоны.</legend>
                 <ul class="filter-list list">
-                  <li class="filter-date-item">
-                    <label class="arrival dates-of-stay">
-                      <span class="date-description">Дата заезда:</span>
-                      <input class="date-input date-chosen calendar" type="text" name="arrival-date"
-                        value="27 апреля 2020" required>
-                      <span class="yes error">Мы не можем отправить вас в прошлое.</span>
-                    </label>
+                  <li class="filter-date-item arrival">
+                    <label class="dates-of-stay" for="first-date">Дата заезда:</label>
+                    <div class="date-conteiner">
+                      <input class="date-input" type="text" id="first-date" name="arrival-date" value="27 апреля 2020"
+                        required>
+                      <button class="calendar" type="button">
+                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.75 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z" fill="currentColor" />
+                          <path
+                            d="M15 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h14v7ZM1 6V3h2v2h1V3h8v2h1V3h2v3H1Z"
+                            fill="currentColor" />
+                          <path
+                            d="M8 10c.3 0 .5-.2.5-.5S8.3 9 8 9s-.5.2-.5.5.2.5.5.5ZM10.25 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.75 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.25 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"
+                            fill="currentColor" />
+                        </svg>
+                      </button>
+                      <span class="error yes-error">Мы не можем отправить вас в прошлое.</span>
+                    </div>
                   </li>
-                  <li class="filter-date-item">
-                    <label class="departure dates-of-stay">
-                      <span class="date-description">Дата выезда:</span>
-                      <input class="date-input date-chosen calendar" type="text" name="departure-date"
-                        value="1 сентября 2021" required>
-                      <span class="not error">На эти даты есть свободные номера. Пока есть.</span>
-                    </label>
+                  <li class="filter-date-item departure">
+                    <label class="dates-of-stay" for="last-date">Дата выезда:</label>
+                    <div class="date-conteiner">
+                      <input class="date-input" type="text" id="last-date" name="departure-date" value="1 сентября 2021"
+                        required>
+                      <button class="calendar" type="button">
+                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.75 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z" fill="currentColor" />
+                          <path
+                            d="M15 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h14v7ZM1 6V3h2v2h1V3h8v2h1V3h2v3H1Z"
+                            fill="currentColor" />
+                          <path
+                            d="M8 10c.3 0 .5-.2.5-.5S8.3 9 8 9s-.5.2-.5.5.2.5.5.5ZM10.25 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.75 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.25 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"
+                            fill="currentColor" />
+                        </svg>
+                      </button>
+                      <span class="error not-error">На эти даты есть свободные номера. Пока есть.</span>
+                    </div>
                   </li>
                 </ul>
               </fieldset>
@@ -254,39 +276,50 @@
                 <legend class="visually-hidden">Выбор количества персон.</legend>
                 <ul class="filter-list list">
                   <li class="filter-persons-item adults-persons">
-                    <span class="persons-description">Взрослые:</span>
-                    <button class="minus">
+                    <label class="persons-description" for="adults">Взрослые:</label>
+                    <button class="minus" type="button">
                       <span class="visually-hidden">Меньше.</span>
                     </button>
                     <label class="number-of-persons">
-                      <input class="persons-input calendar" type="number" name="adults-persons" value="2">
+                      <input class="persons-input" type="number" id="adults" name="adults-persons" value="2">
                     </label>
-                    <button class="plus">
+                    <button class="plus" type="button">
                       <span class="visually-hidden">Больше.</span>
                     </button>
                   </li>
 
                   <li class="filter-persons-item children-persons">
-                    <span class="persons-description">Дети:</span>
-                    <button class="minus">
+                    <div class="persons-description children-tooltip">
+                      <label class="persons-description">Дети:</label>
+                      <span class="tooltip">
+                        <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-children">
+                          <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="13" cy="13" r="13" fill="#83B3D3" />
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z"
+                              fill="#fff" />
+                          </svg>
+                        </button>
+                        <span class="tooltip-text" role="tooltip" id="tooltip-children">Укажите количество детей,
+                          которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6
+                          лет размещаются бесплатно.</span>
+                      </span>
+                    </div>
+                    <button class="minus" type="button">
                       <span class="visually-hidden">Меньше.</span>
                     </button>
-                    <label class="number-of-persons">
-                      <input class="persons-input calendar" type="number" name="children-persons" value="2">
+                    <label class="number-of-persons" for="children">
+                      <input class="persons-input" type="number" id="children" name="children-persons" value="2">
                     </label>
-                    <button class="plus">
+                    <button class="plus" type="button">
                       <span class="visually-hidden">Больше.</span>
                     </button>
                   </li>
                 </ul>
               </fieldset>
-
-              <section class="modal-search-button">
-                <button class="search-button" type="submit">
-                  Найти
-                </button>
-
-              </section>
+              <button class="modal-search-button" type="submit">
+                Найти
+              </button>
             </form>
           </section>
         </div>
