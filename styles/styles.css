@@ -696,7 +696,7 @@ body {
   border-radius: 4px;
 }
 
-/* ДОБАВЛЕНИЕ КРАСЫВЫХ КНОПОЧЕК В РАЗДЕЛ ПАРАМЕРТРОВ ПОИСКА */
+/* ДОБАВЛЕНИЕ КРАСИВЫХ КНОПОЧЕК В РАЗДЕЛ ПАРАМЕРТРОВ ПОИСКА */
 .search-filter-item:not(:last-child) {
   margin-bottom: 16px;
 }
@@ -1418,6 +1418,7 @@ body {
 
 .control-mark-checkbox:focus {
   outline: 3px solid #83B3D3;
+  opacity: 0.6;
 }
 
 .control:active {
@@ -1426,6 +1427,54 @@ body {
 
 /*СОСТОЯНИЯ ДЛЯ МОДАЛЬНОГО ОКНА*/
 
+/* КНОПКА ЗАКРЫТЬ */
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+  cursor: pointer;
+}
+
+.modal-close-button:focus {
+  background: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+.modal-close-button:active {
+  background-color: #E6E6E6;
+  opacity: 0.3;
+}
+
+.modal-close-button:disabled {
+  background-color: #E5E5E5;
+}
+
+.modal-close-button::before:disabled,
+.modal-close-button::after:disabled {
+  background-color: #FFFFFF;
+}
+
+
+/* ДАТЫ */
+.date-input:hover {
+  background-color: #E6E6E6;
+  opacity: 0.6;
+}
+
+.date-input:focus {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+  opacity: 0.6;
+}
+
+.date-input:active {
+  outline: 2px solid #000000;
+  background-color: #E6E6E6;
+}
+
+
+.date-input:disabled {
+  background-color: #E5E5E5;
+  color: #FFFFFF;
+}
 
 
 /*СОСТОЯНИЕ ДЛЯ ТУЛТИПА*/
@@ -1464,4 +1513,5 @@ body {
 
 /* .modal-container-close {
   display: none;
-} */
+}
+ */
