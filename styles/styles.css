@@ -1192,32 +1192,14 @@ body {
 
 .minus,
 .plus {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 48px;
-  margin: 0;
   border: none;
-  padding: 14px 10px;
-  border-radius: 4px;
 }
 
-.minus::before,
-.plus::before,
-.plus::after {
-  position: absolute;
-  width: 2px;
-  height: 14px;
-  background-color: rgba(117, 97, 87, 0.3);
-  transform: rotate(-90deg);
-  top: 16px;
-  left: 20px;
-  content: "";
-}
-
-.plus::after {
-  transform: rotate(0deg);
-  content: "";
-}
 
 /* ________________________________________________ТУЛТИП ________________________________*/
 .tooltip {
@@ -1265,7 +1247,6 @@ body {
   left: 118px;
 }
 
-
 /*____________________________________________СОСТОЯНИЯ__________________________________*/
 
 /*СОСТОЯНИЯ ДЛЯ ГОЛУБЫХ КНОПОК*/
@@ -1275,6 +1256,7 @@ body {
 .pagination-item:not(:first-child):hover,
 .modal-search-button:hover {
   background-color: #68A2CA;
+  cursor: pointer;
 }
 
 .newsletter-button:focus,
@@ -1293,6 +1275,7 @@ body {
 .modal-search-button:active {
   background-color: #82B3D3;
   color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
 }
 
 .newsletter-button:disabled,
@@ -1310,6 +1293,7 @@ body {
 .search .button-search:hover,
 .housing-card-button:hover {
   background-color: #615048;
+  cursor: pointer;
 }
 
 .button-navigation:focus,
@@ -1326,6 +1310,7 @@ body {
 .housing-card-button:active {
   background-color: #756157;
   color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
 }
 
 .button-navigation:disabled,
@@ -1338,6 +1323,7 @@ body {
 /*СОСТОЯНИЯ ПРОЗРАЧНОЙ КНОПКИ*/
 .button-reset:hover {
   opacity: 0.6;
+  cursor: pointer;
 }
 
 .button-reset:focus {
@@ -1346,6 +1332,7 @@ body {
 
 .button-reset:active {
   color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
 }
 
 .button-reset:disabled {
@@ -1355,6 +1342,7 @@ body {
 /*СОСТОЯНИЯ ЗЕЛЕНОЙ КНОПКИ*/
 .green:hover {
   background-color: #6C9E42;
+  cursor: pointer;
 }
 
 .green:focus {
@@ -1365,6 +1353,7 @@ body {
 .green:active {
   background-color: #7DB54F;
   color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
 }
 
 .green:disabled {
@@ -1379,6 +1368,7 @@ body {
 
 .footer-social-link:hover {
   color: #68A2CA;
+  cursor: pointer;
 }
 
 .footer-social-link:focus {
@@ -1387,12 +1377,14 @@ body {
 
 .footer-social-link:active {
   color: rgba(104, 162, 202, 0.3);
+  cursor: pointer;
 }
 
 /*СОСТОЯНИЯ ДЛЯ НОМЕРА ТЕЛЕФОНА И ЛОГОТИПА АКАДЕМИИ*/
 .footer-contact-phone:hover,
 .footer-logo-link:hover {
   color: #756157;
+  cursor: pointer;
 }
 
 .footer-contact-phone:focus,
@@ -1404,25 +1396,97 @@ body {
 .footer-contact-phone:active,
 .footer-logo-link:active {
   color: rgba(117, 97, 87, 0.3);
+  cursor: pointer;
 }
 
 /*СОСТОЯНИЯ ДЛЯ РАЗДЕЛА ПОИСКА ЖИЛЬЯ*/
 
-.control:hover {
+/* СОСТОЯНИЯ ДЛЯ ЧЕКБОКСОВ И РАДИОКНОПОК */
+.control-input:hover + .control-mark-radio,
+.control-input:hover + .control-mark-checkbox {
   opacity: 0.6;
+  cursor: pointer;
 }
 
-.control-mark-radio:focus {
+.control-input:focus + .control-mark-radio,
+.control-input:focus + .control-mark-checkbox {
   outline: 3px solid #83B3D3;
 }
 
-.control-mark-checkbox:focus {
+.control-input:active + .control-mark-radio,
+.control-input:active + .control-mark-checkbox {
   outline: 3px solid #83B3D3;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+/* СОСТОЯНИЯ ДЛЯ ПУНКТОВ МЕНЮ */
+.control-label:hover {
   opacity: 0.6;
 }
 
-.control:active {
+.control-label:active {
   opacity: 0.3;
+}
+
+/* СОСТОЯНИЯ ДЛЯ PАЗДЕЛА СТОИМОСТИ */
+.range-input:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.range-input:active {
+  outline: 2px solid #000000;
+}
+
+/* СОСТОЯНИЯ ДЛЯ ПОЛЗУНКОВ */
+
+.range-bar-toggle:hover {
+  cursor: pointer;
+}
+
+.range-bar-toggle:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.range-bar-toggle:active {
+  outline: 2px solid #83B3D3;
+  cursor: pointer;
+}
+
+.range-bar-conteiner:disabled {
+  opacity: 1;
+}
+
+/* СОСТОЯНИЕ ДЛЯ ВЫПАДАЮЩЕГО СПИСКА */
+.select-control:hover,
+.select-control:focus {
+  outline: 2px solid #68A2CA;
+}
+
+.select-control:active {
+  outline: 2px solid #3F5E72;
+}
+
+.select-control:disabled {
+  outline: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  color: rgba(0, 0, 0, 0.3)
+}
+
+/* СОСТОЯНИЯ ВАРИАНТОВ ОТОБРАЖЕНИЯ КАТАЛОГА НА СТРАНИЦЕ */
+
+.card-grid-toggle-link:hover,
+.card-grid-toggle-link:active {
+  border: 2px solid #000000;
+}
+
+.card-grid-toggle-link:focus {
+  outline: 2px solid #68A2CA;
+}
+
+.card-grid-toggle-link:disabled {
+  background-color: #E5E5E5;
+  color: #FFFFFF;
 }
 
 /*СОСТОЯНИЯ ДЛЯ МОДАЛЬНОГО ОКНА*/
@@ -1441,6 +1505,7 @@ body {
 .modal-close-button:active {
   background-color: #E6E6E6;
   opacity: 0.3;
+  cursor: pointer;
 }
 
 .modal-close-button:disabled {
@@ -1469,7 +1534,6 @@ body {
   outline: 2px solid #000000;
   background-color: #E6E6E6;
 }
-
 
 .date-input:disabled {
   background-color: #E5E5E5;
