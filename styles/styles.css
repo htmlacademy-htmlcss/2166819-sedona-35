@@ -1540,6 +1540,25 @@ body {
   color: #FFFFFF;
 }
 
+.date-input::placeholder {
+  color: #000000;
+  opacity: 0.6;
+}
+
+.date-input::placeholder:hover,
+.date-input::placeholder:focus {
+  background-color: #E6E6E6;
+  opacity: 0.6;
+}
+
+.date-input::placeholder:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.date-input::placeholder:disabled {
+  background-color: #E5E5E5;
+  color: #FFFFFF;
+}
 
 /*СОСТОЯНИЕ ДЛЯ ТУЛТИПА*/
 .tooltip-toggle:hover + .tooltip-text,
@@ -1575,7 +1594,7 @@ body {
 }
 
 
-/* .modal-container-close {
+/*   .modal-container-close {
   display: none;
 }
  */
