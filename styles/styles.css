@@ -1136,6 +1136,7 @@ button {
 }
 
 .date-input {
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -1150,8 +1151,8 @@ button {
 .calendar {
   position: absolute;
   border: none;
-  top: 14px;
-  right: 18px;
+  top: 16px;
+  right: 15px;
   opacity: 0.3;
 }
 
@@ -1200,6 +1201,7 @@ button {
 }
 
 .persons-input {
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -1272,12 +1274,12 @@ button {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
 
-  padding: 15px 18px 18px 22px;
+  padding: 21px 18px 22px 23px;
   z-index: 1;
   width: 216px;
   position: absolute;
-  top: 39px;
-  left: -120px;
+  top: 41px;
+  left: -115px;
 
   display: none;
 }
@@ -1289,7 +1291,7 @@ button {
   position: absolute;
   content: "";
   top: -9px;
-  left: 118px;
+  left: 119px;
 }
 
 /*____________________________________________СОСТОЯНИЯ__________________________________*/
@@ -1638,6 +1640,6 @@ button {
 }
 
 
-.modal-container-close {
+/* .modal-container-close {
   display: none;
-}
+} */
