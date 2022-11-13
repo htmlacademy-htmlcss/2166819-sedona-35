@@ -24,7 +24,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #000000;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   margin: 0;
 }
 
@@ -37,7 +37,7 @@ button {
   flex-direction: column;
   min-height: 100%;
   width: 1200px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   margin: auto;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
@@ -54,7 +54,7 @@ button {
 }
 
 .white {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .list {
@@ -106,7 +106,7 @@ button {
 }
 
 .button {
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #756157;
   border-radius: 4px;
   text-transform: uppercase;
@@ -141,8 +141,8 @@ button {
   font-weight: 400;
   font-size: 10px;
   line-height: 10px;
-  color: #FFFFFF;
-  background-color: #7DB54F;
+  color: #ffffff;
+  background-color: #7db54f;
   padding: 5px;
   border-radius: 50%;
   position: absolute;
@@ -208,7 +208,7 @@ button {
 .search-description {
   font-size: 22px;
   line-height: 26px;
-  color: #333333
+  color: #333333;
 }
 
 .preview-description {
@@ -257,8 +257,8 @@ button {
 }
 
 .advantages-item-blue {
-  background-color: #82B3D3;
-  color: #FFFFFF;
+  background-color: #82b3d3;
+  color: #ffffff;
   display: flex;
   width: 100%;
 }
@@ -326,7 +326,7 @@ button {
 }
 
 .travel-item-white {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -403,14 +403,9 @@ button {
   background-size: 1200px;
   width: 1200px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   padding-top: 96px;
   padding-bottom: 104px;
-}
-
-.newsletter-catalog {
-  background: none;
-  padding-top: 156px;
 }
 
 .newsletter-title {
@@ -421,7 +416,7 @@ button {
 .newsletter-description {
   font-size: 22px;
   line-height: 26px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-top: 20px;
   margin-bottom: 0;
   padding: 0;
@@ -436,8 +431,9 @@ button {
 }
 
 .newsletter-catalog {
-  background-color: #FFFFFF;
+  background: #ffffff;
   color: #000000;
+  padding-top: 156px;
 }
 
 .field {
@@ -454,7 +450,7 @@ button {
 
   padding-left: 21px;
 
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border-radius: 4px 0 0 4px;
 }
 
@@ -462,7 +458,6 @@ button {
   font-weight: 400;
   font-size: 17px;
   line-height: 24px;
-
 }
 
 
@@ -472,9 +467,9 @@ button {
   line-height: 36px;
   text-transform: uppercase;
 
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   border-radius: 0 4px 4px 0;
-  color: #FFFFFF;
+  color: #ffffff;
   border: none;
   min-width: 232px;
   height: 52px;
@@ -507,6 +502,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #83b3d3;
 }
 
 .footer-contact {
@@ -531,8 +527,8 @@ button {
   background-image: url("../images/catalog-background.jpg");
   background-repeat: no-repeat;
   background-size: auto 412px;
-  background-color: #82B3D3;
-  color: #FFFFFF;
+  background-color: #82b3d3;
+  color: #ffffff;
   padding: 35px 70px 70px 70px;
 }
 
@@ -565,7 +561,6 @@ button {
   margin-bottom: 40px;
   padding: 0;
   display: flex;
-
 }
 
 .breadcrumbs-link {
@@ -656,7 +651,7 @@ button {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 191px;
   height: 36px;
   border-radius: 4px;
@@ -665,7 +660,7 @@ button {
 
 .button-submit,
 .add-to-favorites {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .button-submit {
@@ -690,7 +685,7 @@ button {
 }
 
 .select-control {
-  font-family: 'PT Sans';
+  font-family: inherit;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -699,10 +694,10 @@ button {
   width: 292px;
   height: 49px;
   padding-left: 18px;
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
   border-radius: 4px;
 
-  background-image: url(../images/select-control.svg);
+  background-image: url("../images/select-control.svg");
   background-repeat: no-repeat;
   background-position: right 18px center;
   appearance: none;
@@ -726,7 +721,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
   border-radius: 4px;
 }
 
@@ -751,7 +746,7 @@ button {
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 4px;
   top: 1px;
 }
@@ -760,7 +755,7 @@ button {
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 50%;
   top: 1px;
   left: 1px;
@@ -784,7 +779,7 @@ button {
 .control-input[type="radio"]:checked + .control-mark-radio::before {
   width: 10px;
   height: 10px;
-  background-color: #3F5E72;
+  background-color: #3f5e72;
   border-radius: 50%;
   top: 5px;
   left: 5px;
@@ -809,7 +804,7 @@ button {
 
 .range-input {
   width: 103px;
-  background: #F2F2F2;
+  background: #f2f2f2;
   border: none;
   border-radius: 4px 0 0 4px;
   padding: 12px 20px;
@@ -852,14 +847,14 @@ button {
 .range-bar-scale-1 {
   width: 287px;
   height: 4px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   opacity: 0.3;
 }
 
 .range-bar-scale-2 {
   width: 226px;
   height: 4px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   top: 0;
   position: absolute;
 }
@@ -869,12 +864,10 @@ button {
   width: 20px;
   height: 20px;
   border-radius: 5px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: none;
   top: -8px;
 }
-
-
 
 .toggle-max {
   left: 208px;
@@ -891,7 +884,7 @@ button {
 }
 
 .housing-card-item {
-  border: 1px solid #E6E6E6;
+  border: 1px solid #e6e6e6;
   border-radius: 4px;
   padding: 20px;
   display: grid;
@@ -944,7 +937,7 @@ button {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   border-radius: 4px;
   border: 0;
 }
@@ -963,7 +956,7 @@ button {
 }
 
 .green {
-  background: #7DB54F;
+  background: #7db54f;
   padding: 8px 18px;
 }
 
@@ -976,7 +969,7 @@ button {
   grid-column: 2 / 3;
   grid-row: 4 / 5;
 
-  background: #F2F2F2;
+  background: #f2f2f2;
   border-radius: 4px;
   text-transform: uppercase;
   padding: 9px 22px 8px 23px;
@@ -1016,15 +1009,15 @@ button {
   position: absolute;
   width: 100%;
   height: 1px;
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
   bottom: 96px;
   content: "";
 }
 
 .pagination-item {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   border-radius: 4px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-right: 8px;
 }
 
@@ -1037,7 +1030,7 @@ button {
 }
 
 .pagination-current {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   color: #000000;
 }
 
@@ -1062,7 +1055,7 @@ button {
   position: relative;
   margin: auto;
   padding: 64px 70px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 30px;
 }
 
@@ -1146,7 +1139,7 @@ button {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border-radius: 4px;
   border: none;
   width: 400px;
@@ -1167,7 +1160,7 @@ button {
   font-size: 16px;
   line-height: 21px;
   margin: 0 0 0 20px;
-  color: #FF5757;
+  color: #ff5757;
 }
 
 .not-error {
@@ -1210,7 +1203,7 @@ button {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  background: #F2F2F2;
+  background: #f2f2f2;
   border: none;
 
   width: 31px;
@@ -1226,9 +1219,9 @@ button {
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 
-  background-color: #83B3D3;
+  background-color: #83b3d3;
   border-radius: 10px;
   border: none;
 
@@ -1266,14 +1259,14 @@ button {
   padding: 0;
   margin: 0;
   display: block;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .tooltip-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
 
   background-color: #333333;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
@@ -1307,7 +1300,7 @@ button {
 .button-submit:hover,
 .pagination-item:not(:first-child):hover,
 .modal-search-button:hover {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
   cursor: pointer;
 }
 
@@ -1317,7 +1310,7 @@ button {
 .pagination-item:not(:first-child):focus,
 .modal-search-button:focus {
   outline: none;
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .newsletter-button:active,
@@ -1325,7 +1318,7 @@ button {
 .button-submit:active,
 .pagination-item:not(:first-child):active,
 .modal-search-button:active {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   color: rgba(255, 255, 255, 0.3);
   cursor: pointer;
 }
@@ -1335,31 +1328,28 @@ button {
 .button-submit:disabled,
 .pagination-item:not(:first-child):disabled,
 .modal-search-button:disabled {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 
 /*СОСТОЯНИЯ ДЛЯ КОРИЧНЕВЫХ КНОПОК*/
 .button-navigation:hover,
 .housing-card-button:hover,
-.search .button-search:hover,
-.housing-card-button:hover {
+.search .button-search:hover {
   background-color: #615048;
   cursor: pointer;
 }
 
 .button-navigation:focus,
 .housing-card-button:focus,
-.search .button-search:focus,
-.housing-card-button:focus {
+.search .button-search:focus {
   outline: none;
   background-color: #615048;
 }
 
 .button-navigation:active,
 .housing-card-button:active,
-.search .button-search:active,
-.housing-card-button:active {
+.search .button-search:active {
   background-color: #756157;
   color: rgba(255, 255, 255, 0.3);
   cursor: pointer;
@@ -1367,9 +1357,8 @@ button {
 
 .button-navigation:disabled,
 .housing-card-button:disabled,
-.search .button-search:disabled,
-.housing-card-button:disabled {
-  background-color: #E5E5E5;
+.search .button-search:disabled {
+  background-color: #e5e5e5;
 }
 
 /*СОСТОЯНИЯ ПРОЗРАЧНОЙ КНОПКИ*/
@@ -1379,7 +1368,7 @@ button {
 }
 
 .button-reset:focus {
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
 
 .button-reset:active {
@@ -1393,39 +1382,35 @@ button {
 
 /*СОСТОЯНИЯ ЗЕЛЕНОЙ КНОПКИ*/
 .green:hover {
-  background-color: #6C9E42;
+  background-color: #6c9e42;
   cursor: pointer;
 }
 
 .green:focus {
   outline: none;
-  background-color: #6C9E42;
+  background-color: #6c9e42;
 }
 
 .green:active {
-  background-color: #7DB54F;
+  background-color: #7db54f;
   color: rgba(255, 255, 255, 0.3);
   cursor: pointer;
 }
 
 .green:disabled {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 
 /*ФУТЕР*/
 /*СОСТОЯНИЯ ДЛЯ ИКОНОК СОЦ.СЕТЕЙ*/
-.footer-social-link {
-  color: #83B3D3;
-}
-
 .footer-social-link:hover {
-  color: #68A2CA;
+  color: #68a2ca;
   cursor: pointer;
 }
 
 .footer-social-link:focus {
-  color: #68A2CA;
+  color: #68a2ca;
 }
 
 .footer-social-link:active {
@@ -1463,12 +1448,12 @@ button {
 
 .control-input:focus + .control-mark-radio,
 .control-input:focus + .control-mark-checkbox {
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
 
 .control-input:active + .control-mark-radio,
 .control-input:active + .control-mark-checkbox {
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
   opacity: 0.6;
   cursor: pointer;
 }
@@ -1484,7 +1469,7 @@ button {
 
 /* СОСТОЯНИЯ ДЛЯ PАЗДЕЛА СТОИМОСТИ */
 .range-input:focus {
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
 
 .range-input:active {
@@ -1498,11 +1483,11 @@ button {
 }
 
 .range-bar-toggle:focus {
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
 
 .range-bar-toggle:active {
-  outline: 2px solid #83B3D3;
+  outline: 2px solid #83b3d3;
   cursor: pointer;
 }
 
@@ -1513,17 +1498,17 @@ button {
 /* СОСТОЯНИЕ ДЛЯ ВЫПАДАЮЩЕГО СПИСКА */
 .select-control:hover,
 .select-control:focus {
-  outline: 2px solid #68A2CA;
+  outline: 2px solid #68a2ca;
 }
 
 .select-control:active {
-  outline: 2px solid #3F5E72;
+  outline: 2px solid #3f5e72;
 }
 
 .select-control:disabled {
   outline: 2px solid rgba(0, 0, 0, 0.3);
   border-radius: 4px;
-  color: rgba(0, 0, 0, 0.3)
+  color: rgba(0, 0, 0, 0.3);
 }
 
 /* СОСТОЯНИЯ ВАРИАНТОВ ОТОБРАЖЕНИЯ КАТАЛОГА НА СТРАНИЦЕ */
@@ -1534,63 +1519,63 @@ button {
 }
 
 .card-grid-toggle-link:focus {
-  outline: 2px solid #68A2CA;
+  outline: 2px solid #68a2ca;
 }
 
 .card-grid-toggle-link:disabled {
-  background-color: #E5E5E5;
-  color: #FFFFFF;
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 /*СОСТОЯНИЯ ДЛЯ МОДАЛЬНОГО ОКНА*/
 
 /* КНОПКА ЗАКРЫТЬ */
 .modal-close-button:hover {
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
   cursor: pointer;
 }
 
 .modal-close-button:focus {
-  background: #E6E6E6;
-  outline: 3px solid #83B3D3;
+  background: #e6e6e6;
+  outline: 3px solid #83b3d3;
 }
 
 .modal-close-button:active {
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
   opacity: 0.3;
   cursor: pointer;
 }
 
 .modal-close-button:disabled {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 .modal-close-button::before:disabled,
 .modal-close-button::after:disabled {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 
 /* ДАТЫ */
 .date-input:hover {
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
   opacity: 0.6;
 }
 
 .date-input:focus {
-  background-color: #E6E6E6;
-  outline: 3px solid #83B3D3;
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
   opacity: 0.6;
 }
 
 .date-input:active {
   outline: 2px solid #000000;
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 
 .date-input:disabled {
-  background-color: #E5E5E5;
-  color: #FFFFFF;
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 .date-input::placeholder {
@@ -1600,22 +1585,22 @@ button {
 
 .date-input::placeholder:hover,
 .date-input::placeholder:focus {
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
   opacity: 0.6;
 }
 
 .date-input::placeholder:focus {
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
 
 .date-input::placeholder:disabled {
-  background-color: #E5E5E5;
-  color: #FFFFFF;
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 /* ЧИСТО УЧАСТНИКОВ ПОЕЗДКИ*/
 .persons-input::placeholder {
-  color: red;
+  color: #ff5757;
 }
 
 
@@ -1630,20 +1615,20 @@ button {
 /* ХЕДЕР 1й список*/
 .navigation-link:hover {
   background-color: rgba(131, 179, 211, 0.2);
-  color: #83B3D3;
+  color: #83b3d3;
 }
 
 .navigation-link:focus {
-  outline: 1px solid #83B3D3;
-  color: #68A2CA;
+  outline: 1px solid #83b3d3;
+  color: #68a2ca;
 }
 
 .navigation-link:active {
-  color: #E6E6E6;
+  color: #e6e6e6;
 }
 
 .navigation-link:disabled {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 /* ХЕДЕР 2й список*/
