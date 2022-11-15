@@ -201,7 +201,6 @@ body {
 }
 
 .preview-title {
-  max-width: 620px;
   margin: 0 auto 25px;
   padding: 0;
 }
@@ -273,7 +272,7 @@ body {
 
 .advantages-item-white .advantages-container,
 .advantages-item-grey .advantages-container {
-  padding: 103px 85px 121px 85px;
+  padding: 103px 80px 121px 80px;
 }
 
 .canyon {
@@ -401,13 +400,12 @@ body {
 .newsletter {
   background-image: url("../images/background-subscribe.jpg");
   background-repeat: no-repeat;
-  background-size: 1200px;
+  background-size: cover;
   background-color: rgba(131, 179, 211, 0.6);
-  width: 1200px;
+  max-width: 1200px;
   text-align: center;
   color: #ffffff;
-  padding-top: 96px;
-  padding-bottom: 104px;
+  padding: 96px 100px 104px 100px;
 }
 
 .newsletter-title {
@@ -439,6 +437,7 @@ body {
 }
 
 .field {
+  font-family: inherit;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -462,7 +461,6 @@ body {
   line-height: 24px;
 }
 
-
 .newsletter-button {
   font-family: inherit;
   font-weight: 700;
@@ -474,8 +472,8 @@ body {
   border-radius: 0 4px 4px 0;
   color: #ffffff;
   border: none;
-  min-width: 232px;
-  height: 52px;
+  width: 232px;
+  min-height: 52px;
   margin: 0;
   padding: 0;
 }
@@ -562,10 +560,11 @@ body {
 
 /*________________________Хлебные крошки или как вернуться домой________________*/
 .breadcrumbs-list {
-  margin-top: 8px;
+  margin-top: 7px;
   margin-bottom: 40px;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .breadcrumbs-link {
@@ -576,6 +575,8 @@ body {
 
 .breadcrumbs-items {
   position: relative;
+  max-width: 1060px;
+  margin-right: 30px;
 }
 
 .breadcrumbs-link::before {
@@ -591,8 +592,21 @@ body {
 
 .breadcrumbs-house {
   display: block;
-  margin-right: 28px;
+  width: 15px;
+  margin-right: 26px;
+  position: relative;
 }
+
+.breadcrumbs-house::before {
+  background-image: url("../images/hous-inner-header.svg");
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 12px;
+  top: 4px;
+  position: absolute;
+  content: "";
+}
+
 
 /*______________________________Параметры поиска гостиниц в седоне______________*/
 .search-filter-group {
@@ -606,7 +620,7 @@ body {
 .price-filter {
   border: none;
   width: 288px;
-  margin-right: 71px;
+  margin-right: 69px;
   margin-left: 0;
   padding: 0;
 }
@@ -635,7 +649,7 @@ body {
 }
 
 .housing-type {
-  margin-right: 150px;
+  margin-right: 156px;
 }
 
 .button-reset {
@@ -658,7 +672,7 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   width: 191px;
-  height: 36px;
+  min-height: 36px;
   border-radius: 4px;
   border: 0;
 }
@@ -669,13 +683,13 @@ body {
 }
 
 .button-submit {
-  margin-bottom: 30px;
+  margin-bottom: 33px;
   padding: 0;
 }
 
 .result {
   display: flex;
-  margin-top: 52px;
+  margin-top: 49px;
   justify-content: space-between;
   align-items: center;
 }
@@ -687,6 +701,8 @@ body {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+  display: block;
+  max-width: 340px;
 }
 
 .select-control {
@@ -718,6 +734,34 @@ body {
   display: grid;
   grid-template-columns: 48px 48px 48px;
   gap: 8px;
+}
+
+.card-grid-toggle {
+  position: relative;
+}
+
+.card-grid-toggle:nth-child(1)::before,
+.card-grid-toggle:nth-child(2)::before,
+.card-grid-toggle:nth-child(3)::before {
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 14px;
+  top: 17px;
+  left: 16px;
+  position: absolute;
+  content: "";
+}
+
+.card-grid-toggle:nth-child(1)::before {
+  background-image: url("../images/card-grid-toggle-tile.svg");
+}
+
+.card-grid-toggle:nth-child(2)::before {
+  background-image: url("../images/card-grid-toggle-table.svg");
+}
+
+.card-grid-toggle:nth-child(3)::before {
+  background-image: url("../images/card-grid-toggle-list.svg");
 }
 
 .card-grid-toggle-link {
@@ -767,6 +811,8 @@ body {
 }
 
 .control-label {
+  display: block;
+  max-width: 100px;
   margin-left: 36px;
 }
 
@@ -799,7 +845,7 @@ body {
   gap: 2px;
   grid-template-columns: 143px 143px;
   margin-top: 32px;
-  margin-bottom: 43px;
+  margin-bottom: 45px;
 }
 
 .range-price-starting,
@@ -808,15 +854,16 @@ body {
 }
 
 .range-input {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+
   width: 103px;
   background: #f2f2f2;
   border: none;
   border-radius: 4px 0 0 4px;
   padding: 12px 20px;
-
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
 }
 
 .range-price-final .range-input {
@@ -842,6 +889,11 @@ body {
 .persons-input::-webkit-outer-spin-button,
 .persons-input::-webkit-inner-spin-button {
   appearance: none;
+}
+
+.range-input,
+.persons-input {
+  -moz-appearance: textfield;
 }
 
 /* ШКАЛА */
@@ -894,7 +946,6 @@ body {
   padding: 20px;
   display: grid;
   grid-template-columns: 140px 140px;
-  grid-template-rows: 256px 21px 36px 37px;
   column-gap: 20px;
   row-gap: 16px;
 }
@@ -922,7 +973,6 @@ body {
 .housing-card-description {
   color: #333333;
   grid-column: 1 / 2;
-  grid-row: 2 / 3;
   margin: 0;
   padding: 0;
 }
@@ -932,9 +982,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: right;
-
   grid-column: 2 / 3;
-  grid-row: 2 / 3;
 }
 
 .button-card {
@@ -950,19 +998,16 @@ body {
 .housing-card-button {
   background-color: #756157;
   grid-column: 1 / 2;
-  grid-row: 3 / 4;
   padding: 8px 26px;
 }
 
 .add-to-favorites {
+  font-family: inherit;
   grid-column: 2 / 3;
-  grid-row: 3 / 4;
-  padding: 8px 20px;
 }
 
 .green {
   background: #7db54f;
-  padding: 8px 18px;
 }
 
 .housing-card-rating {
@@ -972,17 +1017,14 @@ body {
   color: #333333;
 
   grid-column: 2 / 3;
-  grid-row: 4 / 5;
 
   background: #f2f2f2;
   border-radius: 4px;
   text-transform: uppercase;
-  padding: 9px 22px 8px 23px;
 }
 
 .housing-stars {
   grid-column: 1 / 2;
-  grid-row: 4 / 5;
 
   margin-top: 10px;
   background-image: url("../images/star.svg");
@@ -1015,7 +1057,7 @@ body {
   width: 100%;
   height: 1px;
   background-color: #e6e6e6;
-  bottom: 96px;
+  bottom: 100px;
   content: "";
 }
 
@@ -1316,7 +1358,6 @@ body {
 .button-submit:focus,
 .pagination-item:not(:first-child):focus,
 .modal-search-button:focus {
-  outline: none;
   background-color: #68a2ca;
 }
 
@@ -1350,7 +1391,6 @@ body {
 .button-navigation:focus,
 .housing-card-button:focus,
 .search .button-search:focus {
-  outline: none;
   background-color: #615048;
 }
 
@@ -1394,7 +1434,6 @@ body {
 }
 
 .green:focus {
-  outline: none;
   background-color: #6c9e42;
 }
 
@@ -1643,7 +1682,6 @@ body {
 .navigation-user-item .navigation-link:active {
   color: rgba(104, 162, 202, 0.3);
 }
-
 
 .modal-container-close {
   display: none;
