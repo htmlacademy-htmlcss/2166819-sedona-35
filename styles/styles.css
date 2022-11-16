@@ -898,7 +898,7 @@ img {
 
 .range-input,
 .persons-input {
-  -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 /* ШКАЛА */
@@ -1694,6 +1694,6 @@ img {
   color: rgba(104, 162, 202, 0.3);
 }
 
-.modal-container-close {
+/* .modal-container-close {
   display: none;
-}
+} */

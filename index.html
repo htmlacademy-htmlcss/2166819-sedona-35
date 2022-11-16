@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
-        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
 
   <body>
@@ -69,7 +69,7 @@
         </section>
 
         <section class="preview">
-          <h2 class="visually-hidden">Описание Седоны./h2>
+          <h2 class="visually-hidden">Описание Седоны.</h2>
             <h3 class="preview-title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h3>
             <p class="preview-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </section>
@@ -144,11 +144,11 @@
         </section>
 
         <section class="newsletter">
-          <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+          <h2 class="visually-hidden">Подписка на рассылку.</h2>
+          <label class="newsletter-title" for="field">Подпишитесь на рассылку</label>
           <p class="newsletter-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="visually-hidden" for="field">Подписка на рассылку.</label>
-            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" required>
+            <input class="field" placeholder="Ваш e-mail" id="field" type="email" name="newsletter-email" required>
             <button class="newsletter-button" type="submit">Подписаться</button>
           </form>
         </section>
